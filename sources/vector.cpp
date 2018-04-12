@@ -94,7 +94,7 @@ void vector_t::push_back(int value)
 void vector_t::pop_back()
 {
     size --;
-    if(size_ == 0 || size_ * 4 == capacity_) {
+    if(size == 0 || size * 4 == capacity) {
         int *saveelement;
         saveelement = new int[size];
         for(std::size_t i = 0; i < size; ++i) {
