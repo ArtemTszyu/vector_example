@@ -93,31 +93,31 @@ void vector_t::push_back(int value)
 
 void vector_t::pop_back()
 {
-    size_ --;
-    if(size_ == 0 || size_ * 4 == capacity_) {
-        int *mas;
-        mas = new int[size_];
-        for(std::size_t i = 0; i < size_; ++i) {
-            mas[i] = elements_[i];
+    size --;
+    if(size == 0 || size * 4 == capacity) {
+        int *saveelement;
+        saveelement = new int[size];
+        for(std::size_t i = 0; i < size; ++i) {
+            saveelement[i] = elements[i];
         }
-        delete [] elements_;
-        capacity_ = capacity_ / 2;
-        elements_ = new int[capacity_];
-        for(std::size_t i = 0; i < size_; ++i) {
-            elements_[i] = mas[i];
+        delete [] elements;
+        capacity = capacity / 2;
+        elements = new int[capacity];
+        for(std::size_t i = 0; i < size; ++i) {
+            elements[i] = saveelement[i];
         }
-        delete [] mas;
+        delete [] saveelement;
     }        
 }
 
 int & vector_t::operator [](std::size_t index)
 {
-	return elements_[index];
+	return elements[index];
 }
 
 int vector_t::operator [](std::size_t index) const
 {
-	return elements_[index];
+	return elements[index];
 }
 
 bool operator !=(vector_t const & lhs, vector_t const & rhs)
