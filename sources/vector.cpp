@@ -23,7 +23,7 @@ vector_t::vector_t(vector_t const & other)
 
 vector_t & vector_t::operator =(vector_t const & other)
 {
-    delete elements [];
+    delete [] elements ;
     this.size=other.size;
     this.capacity=other.capacity;
     elements= new int [capacity];
@@ -48,7 +48,7 @@ bool vector_t::operator ==(vector_t const & other) const
 
 vector_t::~vector_t()
 {
-    delete elements [];
+    delete [] elements ;
 }
 
 std::size_t vector_t::size() const
