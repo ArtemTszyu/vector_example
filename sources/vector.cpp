@@ -23,7 +23,7 @@ vector_t::vector_t(vector_t const & other)
 
 vector_t & vector_t::operator =(vector_t const & other)
 {
-    delete [elements];
+    delete elements [];
     this.size=other.size;
     this.capacity=other.capacity;
     elements= new int [capacity];
@@ -82,7 +82,7 @@ void vector_t::push_back(int value)
             for(std::size_t i = 0; i < size; ++i) {
                 elements[i] = saveelement[i];
             }
-            delete [] mas;
+            delete [] saveelement;
             elements[size] = value;
             size ++;
         }
