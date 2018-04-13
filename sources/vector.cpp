@@ -35,11 +35,12 @@ vector_t & vector_t::operator =(vector_t const & other)
 
 bool vector_t::operator ==(vector_t const & other) const
 {
-    if (size_=other.size_ & capacity_=other.capacity_) {
+    if (size_==other.size_ && capacity_==other.capacity_) {
         for (int i = 0; i<size_; i++) {
-            elements_=other.elements_;
+            if (elements_!=other.elements_;){
+                return false;
+    }
         }
-        return true;
     }
     else {
         return false;
