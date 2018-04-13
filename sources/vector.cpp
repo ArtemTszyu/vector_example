@@ -102,8 +102,8 @@ void vector_t::pop_back()
         }
         delete [] elements_;
         capacity_ = capacity_ / 2;
-        elements = new int[capacity_];
-        for(std::size_t i = 0; i < size__; ++i) {
+        elements_ = new int[capacity_];
+        for(std::size_t i = 0; i < size_; ++i) {
             elements_[i] = saveelement[i];
         }
         delete [] saveelement;
