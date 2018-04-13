@@ -1,5 +1,5 @@
 
-#include < algorithm > #include < cassert >
+#include <algorithm> #include <cassert>
 
         #include "vector.hpp"
 
