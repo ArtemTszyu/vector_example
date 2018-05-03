@@ -59,12 +59,12 @@ vector_t::~vector_t()
     delete[] elements_;
 }
 
-std::size_t vector_t::size_()
+std::size_t vector_t::size() const
 {
     return size_;
 }
 
-std::size_t vector_t::capacity_() 
+std::size_t vector_t::capacity() const
 {
     return capacity_;
 }
