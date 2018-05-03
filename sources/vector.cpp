@@ -59,12 +59,12 @@ vector_t::~vector_t()
     delete[] elements_;
 }
 
-std::size_t vector_t::size_() const
+std::size_t vector_t::size_()
 {
     return size_;
 }
 
-std::size_t vector_t::capacity_() const
+std::size_t vector_t::capacity_() 
 {
     return capacity_;
 }
@@ -100,9 +100,6 @@ void vector_t::push_back(int value)
             size_++;
         }
     }
-    else
-        elements_ = value;
-    size_++;
 }
 
 void vector_t::pop_back()
