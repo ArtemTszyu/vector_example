@@ -16,7 +16,7 @@ TEST_CASE("copying vector")
 	vector.push_back(1);
 
 	vector_t copy(vector);
-	REQUIRE( copy == vector );
+	REQUIRE( (copy == vector)==true );
 }
 
 TEST_CASE("assigning vector")
