@@ -46,11 +46,15 @@ bool vector_t::operator==(vector_t const& other) const
             {
                 return false;
             }
+            else 
+            {
+                return true;
+            }
         }
     }
     else
     {
-        return true;
+        return false;
     }
 }
 
