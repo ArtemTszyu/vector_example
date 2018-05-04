@@ -24,8 +24,11 @@ vector_t::vector_t(vector_t const& other)
 }
 
 vector_t& vector_t::operator=(vector_t const& other)
-{
-    delete[] elements_;
+{    
+    if ( this == &other ){
+        return *this;
+    }
+    delete[] elements_;    
     size_ = other.size_;
     capacity_ = other.capacity_;
     elements_ = new int[capacity_];
