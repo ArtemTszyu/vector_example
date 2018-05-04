@@ -43,7 +43,7 @@ bool vector_t::operator==(vector_t const& other) const
    {
        for (std::size_t i = 0; i < size_; i++)
        {
-           if (elements_ [i] = other.elements_ [i])
+           if (elements_ [i] == other.elements_ [i])
            {
                success = true;
            }
