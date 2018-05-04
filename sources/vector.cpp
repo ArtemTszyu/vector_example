@@ -103,6 +103,11 @@ void vector_t::push_back(int value)
             size_++;
         }
     }
+    else
+    {
+        elements_[size_] = value;
+        size++;
+    }
 }
 
 void vector_t::pop_back()
