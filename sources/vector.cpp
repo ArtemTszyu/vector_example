@@ -41,7 +41,7 @@ bool vector_t::operator==(vector_t const& other) const
    bool success = false;
    if (size_ == other.size_ && capacity_ == other.capacity_)
    {
-       for (std::size_t int i = 0; i < size_; i++)
+       for (std::size_t i = 0; i < size_; i++)
        {
            if (elements_ [i] = other.elements_ [i])
            {
