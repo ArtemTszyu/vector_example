@@ -38,24 +38,23 @@ vector_t& vector_t::operator=(vector_t const& other)
 
 bool vector_t::operator==(vector_t const& other) const
 {
-    if (size_ == other.size_ && capacity_ == other.capacity_)
-    {
-        for (int i = 0; i < size_; i++)
-        {
-            if (elements_ != other.elements_)
-            {
-                return false;
-            }
-            else 
-            {
-                return true;
-            }
-        }
-    }
-    else
-    {
-        return false;
-    }
+   bool success = false;
+   if (size_ == other.size_ && capacity_ == other.capacity_)
+   {
+       for (std::size_t int i = 0; i < size_; i++)
+       {
+           if (elements_ [i] = other.elements_ [i])
+           {
+               success = true;
+           }
+           else 
+           {
+               success = false;
+               return success;
+           }
+       }   
+   }
+   return success; 
 }
 
 vector_t::~vector_t()
