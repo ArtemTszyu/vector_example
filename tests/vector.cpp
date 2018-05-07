@@ -117,3 +117,12 @@ TEST_CASE("poping elements")
 	REQUIRE( vector.size() == 0 );
 	REQUIRE( vector.capacity() == 1 );
 }
+
+TEST_CASE("out of range vector")
+{
+	vector_t<int> vector;
+	vector.push_back(1);
+	vector.push_back(2);
+	vector.push_back(3);
+	REQUIRE_THROWS_AS(vector.at(4), std::out_of_range);
+}
