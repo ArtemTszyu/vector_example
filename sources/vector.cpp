@@ -158,7 +158,7 @@ int vector_t<T>::operator[](std::size_t index) const
     return elements_[index];
 }
 
-bool operator!=(vector_t const& lhs, vector_t const& rhs)
+bool operator!=(vector_t<T> const& lhs, vector_t<T> const& rhs)
 {
     bool success = true;
     if (lhs == rhs)
