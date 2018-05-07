@@ -115,11 +115,11 @@ void vector_t::push_back(int value)
 
 void vector_t::pop_back()
 {
-    size_--;
     if (size_ == 0)
     {
         throw std::invalid_argument("Trying to delete unexisting argument");
     }
+    size_--;
     if (size_ * 4 == capacity_)
     {
         int* saveelement;
