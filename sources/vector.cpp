@@ -4,7 +4,7 @@
 
 #include "vector.hpp"
 template <typename T>
-vector_t::vector_t()
+vector_t <T> ::vector_t()
 {
     size_ = 0;
     capacity_ = 0;
