@@ -32,4 +32,5 @@ public:
 	}
 };
 
+template <typename T>
 bool operator !=(vector_t<T> const & lhs, vector_t<T> const & rhs);
