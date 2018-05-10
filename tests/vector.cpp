@@ -53,7 +53,7 @@ TEST_CASE("indexing vector")
 
 	REQUIRE( vector[0] == 1 );
 
-	vector_t <int> const copy(vector);
+	vector_t <int> copy(vector);
 	REQUIRE( copy[0] == 1 );
 }
 
