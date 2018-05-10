@@ -12,7 +12,7 @@ vector_t <T> ::vector_t()
 }
 
 template <typename T>
-vector_t <T> ::vector_t(vector_t const& other)
+vector_t <T> ::vector_t(vector_t<T> const& other)
 {
     size_ = other.size_;
     capacity_ = other.capacity_;
@@ -25,7 +25,7 @@ vector_t <T> ::vector_t(vector_t const& other)
 }
 
 template <typename T>
-vector_t <T> & vector_t<T>::operator=(vector_t const& other)
+vector_t <T> & vector_t<T>::operator=(vector_t<T> const& other)
 {    
     if ( this == &other ){
         return *this;
@@ -42,7 +42,7 @@ vector_t <T> & vector_t<T>::operator=(vector_t const& other)
 }
 
 template <typename T>
-bool vector_t <T> ::operator==(vector_t const& other) const
+bool vector_t <T> ::operator==(vector_t<T> const& other) const
 {
    bool success = false;
    if (size_ == other.size_ && capacity_ == other.capacity_)
