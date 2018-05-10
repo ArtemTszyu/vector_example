@@ -99,10 +99,8 @@ public:
     }
     void pop_back()
     {
-        if (size_ != 0)
-        {
             size_--;
-            if (size_ * 4 == capacity_)
+            if (size_ * 4 == capacity_ || size_==0 )
             {
                 T* saveelement;
                 saveelement = new T[size_];
@@ -117,14 +115,8 @@ public:
                 {
                     elements_[i] = saveelement[i];
                 }
-
                 delete[] saveelement;
             }
-            else 
-            {
-                capacity_ = 0;
-            }
-        }
     }
 
     int& operator[](std::size_t index)
