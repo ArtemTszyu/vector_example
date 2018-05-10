@@ -123,7 +123,6 @@ public:
             else 
             {
                 capacity_ = 0;
-                return 0;
             }
         }
     }
