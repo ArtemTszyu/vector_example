@@ -71,6 +71,8 @@ public:
                 elements_ = new T[capacity_];
                 elements_[0] = value;
             }
+            else
+            {
                 T* saveelement;
                 saveelement = new T[size_];
                 for (std::size_t i = 0; i < size_; ++i)
@@ -87,6 +89,7 @@ public:
                 delete[] saveelement;
                 elements_[size_] = value;
                 size_++;
+            }
         }
         else
         {
