@@ -9,8 +9,8 @@ private:
 	std::size_t capacity_;
 public:
 	vector_t();
-	vector_t(vector_t const & other);
-	vector_t & operator =(vector_t const & other);
+	vector_t(vector_t<T> const & other);
+	vector_t & operator =(vector_t<T> const & other);
 	~vector_t();
 
 	std::size_t size() const;
@@ -22,7 +22,7 @@ public:
 	int & operator [](std::size_t index);
 	int operator [](std::size_t index) const;
 
-	bool operator ==(vector_t const & other) const;
+	bool operator ==(vector_t<T> const & other) const;
 	
 	T & at(std::size_t index) {
 	if(index >= size_) {
