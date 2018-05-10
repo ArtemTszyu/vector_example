@@ -14,7 +14,7 @@ public:
         size_ = 0;
         capacity_ = 0;
         elements_ = nullptr;
-
+    }
     vector_t(vector_t<T> const& other)
     {
         size_ = other.size_;
