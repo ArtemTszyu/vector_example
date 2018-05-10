@@ -158,6 +158,7 @@ int vector_t<T>::operator[](std::size_t index) const
     return elements_[index];
 }
 
+template <typename T>
 bool operator!=(vector_t<T> const& lhs, vector_t<T> const& rhs)
 {
     bool success = true;
