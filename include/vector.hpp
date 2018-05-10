@@ -120,6 +120,7 @@ public:
 
                 delete[] saveelement;
             }
+            return 0;
         }
     }
 
