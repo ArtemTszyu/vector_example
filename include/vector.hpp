@@ -120,7 +120,10 @@ public:
 
                 delete[] saveelement;
             }
-            return 0;
+            else 
+            {
+                capacity_ = 0;
+                return 0;
         }
     }
 
