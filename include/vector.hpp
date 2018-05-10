@@ -123,7 +123,7 @@ public:
     {
         return elements_[index];
     }
-    int operator[](std::size_t index) const;
+    int operator[](std::size_t index) const
     {
         return elements_[index];
     }
